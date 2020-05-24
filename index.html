@@ -31,14 +31,45 @@
           />
         </p>
         <p>
-          <label for="phone">Nazwisko:</label>
+          <label for="phoneNumber">Numer telefonu:</label>
           <input
             class="form__input"
             placeholder="Wpisz swój numer telefonu w formacie XXX-XXX-XXX"
-            id="phone"
-            name="phone"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="tel"
           />
         </p>
+        <p>
+          <label for="email">Adres e-mail:</label>
+          <input
+            class="form__input"
+            placeholder="Wpisz swój adres e-mail"
+            id="email"
+            name="email"
+            type="email"
+          />
+        </p>
+        <p>
+            <label for="password">Podaj hasło do swojego emaila:</label>
+            <input
+              class="form__input"
+              placeholder="Wpisz hasło do swojego emaila"
+              id="password"
+              name="password"
+              type="password"
+            />
+          </p>
+          <p>
+            <label for="photo">Dodaj swoje zdjęcie:</label>
+            <input
+              class="form__input"              
+              id="photo"
+              name="photo"
+              type="file"
+            />
+          </p>
+
         <fieldset>
           <legend>Adres:</legend>
           <p>
@@ -66,6 +97,7 @@
               placeholder="Wpisz numer mieszkania"
               id="flat-number"
               name="flat-number"
+              type="number"
             />
           </p>
           <p>
@@ -88,20 +120,32 @@
           </p>
         </fieldset>
         <fieldset>
-            <legend>Najlepszy piłkarz wszechczasów GOAT to:</legend>
-            <p>
-                <label><input name="goat" type="radio" value="Robert Lewandowski"> Robert Lewandowski</label>
-            </p>
-            <p>
-                <label><input name="goat" type="radio" value="Cristiano Ronaldo"> Cristiano Ronaldo</label>
-            </p>
-            <p>
-                <label><input name="goat" type="radio" value="Lionel Messi"> Lionel Messi</label>
-            </p>
+          <legend>Najlepszy piłkarz wszechczasów GOAT to:</legend>
+          <p>
+            <label
+              ><input name="goat" type="radio" value="Robert Lewandowski" />
+              Robert Lewandowski</label
+            >
+          </p>
+          <p>
+            <label
+              ><input name="goat" type="radio" value="Cristiano Ronaldo" />
+              Cristiano Ronaldo</label
+            >
+          </p>
+          <p>
+            <label
+              ><input name="goat" type="radio" value="Lionel Messi" /> Lionel
+              Messi</label
+            >
+          </p>
         </fieldset>
 
         <p>
-            <label><input name="agreement" type="checkbox">Zgadzam się, że powyżej popełniłem błąd i powinienem był wybrać Tomasza K.</label>
+          <label
+            ><input name="agreement" type="checkbox" />Zgadzam się, że powyżej
+            popełniłem błąd i powinienem był wybrać Tomasza K.</label
+          >
         </p>
       </form>
     </main>
