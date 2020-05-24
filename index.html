@@ -13,7 +13,7 @@
 
       <form class="form">
         <p>
-          <label for="firstName">Imię:</label>
+          <label class="label" for="firstName">Imię:</label>
           <input
             class="form__input"
             placeholder="Wpisz swoje imię"
@@ -22,7 +22,7 @@
           />
         </p>
         <p>
-          <label for="lastName">Nazwisko:</label>
+          <label class="label" for="lastName">Nazwisko:</label>
           <input
             class="form__input"
             placeholder="Wpisz swoje nazwisko"
@@ -31,7 +31,7 @@
           />
         </p>
         <p>
-          <label for="phoneNumber">Numer telefonu:</label>
+          <label class="label" for="phoneNumber">Numer telefonu:</label>
           <input
             class="form__input"
             placeholder="Wpisz swój numer telefonu w formacie XXX-XXX-XXX"
@@ -41,7 +41,7 @@
           />
         </p>
         <p>
-          <label for="email">Adres e-mail:</label>
+          <label class="label" for="email">Adres e-mail:</label>
           <input
             class="form__input"
             placeholder="Wpisz swój adres e-mail"
@@ -51,29 +51,30 @@
           />
         </p>
         <p>
-            <label for="password">Podaj hasło do swojego emaila:</label>
-            <input
-              class="form__input"
-              placeholder="Wpisz hasło do swojego emaila"
-              id="password"
-              name="password"
-              type="password"
-            />
-          </p>
-          <p>
-            <label for="photo">Dodaj swoje zdjęcie:</label>
-            <input
-              class="form__input"              
-              id="photo"
-              name="photo"
-              type="file"
-            />
-          </p>
+          <label class="label" for="password"
+            >Podaj hasło do swojego emaila:</label
+          >
+          <input
+            class="form__input"
+            placeholder="Wpisz hasło do swojego emaila"
+            id="password"
+            name="password"
+            type="password"
+          />
+        </p>
+        <p>
+          <label class="label" for="photo">Dodaj swoje zdjęcie:</label>
+          <input class="form__input" id="photo" name="photo" type="file" />
+        </p>
+        <p>
+          <label class="label" for="story">Napisz parę słów o sobie:</label>
+          <textarea class="textarea" id="story" name="story"></textarea>
+        </p>
 
         <fieldset>
           <legend>Adres:</legend>
           <p>
-            <label for="street">Ulica:</label>
+            <label class="label" for="street">Ulica:</label>
             <input
               class="form__input"
               placeholder="Wpisz nazwę ulicy"
@@ -82,7 +83,7 @@
             />
           </p>
           <p>
-            <label for="house-number">Numer domu:</label>
+            <label class="label" for="house-number">Numer domu:</label>
             <input
               class="form__input"
               placeholder="Wpisz numer domu"
@@ -91,7 +92,7 @@
             />
           </p>
           <p>
-            <label for="flat-number">Numer mieszkania:</label>
+            <label class="label" for="flat-number">Numer mieszkania:</label>
             <input
               class="form__input"
               placeholder="Wpisz numer mieszkania"
@@ -101,7 +102,7 @@
             />
           </p>
           <p>
-            <label for="postal-code">Kod pocztowy:</label>
+            <label class="label" for="postal-code">Kod pocztowy:</label>
             <input
               class="form__input"
               placeholder="Wpisz kod pocztowy"
@@ -110,7 +111,7 @@
             />
           </p>
           <p>
-            <label for="city">Miejscowość:</label>
+            <label class="label" for="city">Miejscowość:</label>
             <input
               class="form__input"
               placeholder="Wpisz nazwę miejscowości"
@@ -122,19 +123,19 @@
         <fieldset>
           <legend>Najlepszy piłkarz wszechczasów GOAT to:</legend>
           <p>
-            <label
+            <label class="label"
               ><input name="goat" type="radio" value="Robert Lewandowski" />
               Robert Lewandowski</label
             >
           </p>
           <p>
-            <label
+            <label class="label"
               ><input name="goat" type="radio" value="Cristiano Ronaldo" />
               Cristiano Ronaldo</label
             >
           </p>
           <p>
-            <label
+            <label class="label"
               ><input name="goat" type="radio" value="Lionel Messi" /> Lionel
               Messi</label
             >
@@ -142,10 +143,23 @@
         </fieldset>
 
         <p>
-          <label
+          <label class="label"
             ><input name="agreement" type="checkbox" />Zgadzam się, że powyżej
             popełniłem błąd i powinienem był wybrać Tomasza K.</label
           >
+        </p>
+        <p>
+          <label class="label" for="team">Ulubiony zespół:</label>
+          <select id="team" name="team">
+            <option>Wigry Suwałki</option>
+            <option>Manchester United</option>
+            <option>FC Barcelona</option>
+            <option>Real Madryt</option>
+            <option>Juventus Turyn</option>
+          </select>
+        </p>
+        <p>
+          <input name="send" id="send" type="submit" value="Zakończ i wyślij" />
         </p>
       </form>
     </main>

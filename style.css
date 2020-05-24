@@ -18,10 +18,20 @@ html {
 }
 
 .form {
+    width: 600px;
 
 }
 
 .form__input {
     display: block;
     width: 100%;
+}
+
+.label {
+    display: block;
+}
+
+.textarea {
+    width: 100%;
+    height: 300px;
 }
