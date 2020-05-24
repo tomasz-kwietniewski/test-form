@@ -11,7 +11,12 @@
     <main>
       <h1>Formularz testowy</h1>
 
-      <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+      <form
+        method="POST"
+        enctype="multipart/form-data"
+        action="https://dev.cotenfrontend.pl"
+        class="form"
+      >
         <p>
           <label class="label" for="firstName">Imię:</label>
           <input
@@ -125,7 +130,12 @@
           <legend>Najlepszy piłkarz wszechczasów GOAT to:</legend>
           <p>
             <label class="label"
-              ><input name="goat" type="radio" value="Robert Lewandowski" />
+              ><input
+                name="goat"
+                type="radio"
+                value="Robert Lewandowski"
+                checked
+              />
               Robert Lewandowski</label
             >
           </p>
@@ -145,8 +155,8 @@
 
         <p>
           <label class="label"
-            ><input name="agreement" type="checkbox" required />Zgadzam się, że powyżej
-            popełniłem błąd i powinienem był wybrać Tomasza K.</label
+            ><input name="agreement" type="checkbox" required />Zgadzam się, że
+            powyżej popełniłem błąd i powinienem był wybrać Tomasza K.</label
           >
         </p>
         <p>
@@ -160,6 +170,38 @@
             <option>Juventus Turyn</option>
           </select>
         </p>
+        <fieldset>
+          <legend>
+            Czym się interesujesz? (możesz wybrać więcej niż jeden element)
+          </legend>
+          <p>
+            <input
+              type="checkbox"
+              id="sport"
+              name="interest"
+              value="sport"
+              checked
+            />
+            <label for="sport">Sport</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="music" name="interest" value="music" />
+            <label for="music">Muzyka</label>
+          </p>
+          <p>
+            <input type="checkbox" id="history" name="interest" value="history" />
+            <label for="history">Historia</label>
+          </p>
+          <p>
+            <input type="checkbox" id="politics" name="interest" value="politics" />
+            <label for="politics">Polityka</label>
+          </p>
+          <p>
+            <input type="checkbox" id="economy" name="interest" value="economy" />
+            <label for="economy">Gospodarka</label>
+          </p>
+        </fieldset>
 
         <p>
           <input name="send" id="send" type="submit" value="Zakończ i wyślij" />
