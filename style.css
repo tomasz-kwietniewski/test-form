@@ -9,6 +9,19 @@ html {
   }
 
 .body {
-    background: navy;
+    background: rgb(88, 88, 100);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form {
+
+}
+
+.form__input {
+    display: block;
+    width: 100%;
 }
